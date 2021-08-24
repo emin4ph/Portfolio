@@ -1,0 +1,221 @@
+@media only screen and (min-width: 991px) {
+	.middleDiv{
+		display: grid !important;
+		width: 100%;
+		height: 30vmax;	
+		align-items: center !important;
+	}		
+	.allPillsBoxMobile{
+		display: none;
+	}
+	.imgPerson-mobile{
+		display: none;
+	}
+	.imgMobileAbout{
+		display: none;
+	}	
+	.headerMobile{
+		display: none;
+	}
+}
+@media only screen and (max-width: 991px){
+	/*-------Mobile Responsive Start-------*/
+	.categoryTextDiv{
+		display: none;
+	}
+	.allPillsBox{
+		display: none;
+	}
+	.d12{
+		display: none;
+	}
+	.allPillsBoxMobile{
+		background-color: #252525;
+		overflow: hidden;  	
+  		position: fixed;
+  		bottom: 0;  
+  		left: 0;		
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		width: 100%;   		
+  		z-index: 999;  		
+	}
+	.ulpills-mobile{
+		display: grid;
+		grid: 55px / repeat(5, 20vmin);
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	.nav-itemAll-mobile{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-itemAll-mobile .active{
+		color: #8a2be2;
+	}
+	.pillsCategoryMobile{
+		color: #fff;
+	}
+	.pillsCategoryMobile:hover{
+		text-decoration: none;		
+	}
+	.icon-category-mobile{
+		display: grid;
+		grid: auto auto / auto;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.icon-category-mobile i{
+		font-size: 20px;
+	}	
+	.icon-category-mobile span{
+		font-size: 12px;
+	}
+	.imgPerson{
+		display: none;
+	}
+	.personBox{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10vmin;
+	}
+	.imgPerson-mobile{
+		background-image: url(../img/johnnyDeppMobile.png);
+		background-size: cover;
+		background-position: center;
+		width: 200px;
+		height: 200px;
+		border: 2px solid #252525;
+		border-radius: 50%;
+	}
+	.mobile-tablet-margin{
+		margin-bottom: 70px;
+	}
+	.contactPfirst {
+		width: 100%;
+	}
+
+	/*-------Mobile Responsive Stop-------*/
+	.imgPersonHomeMobile{
+		display: none;
+	}
+}
+@media (max-width: 991px) and (min-width: 766px){
+	.homeAllText{
+		margin-top: 30px;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.homeAllText p{
+		width: 70vmin;
+	}
+	.imgMobileAbout{
+		display: none;
+	}
+	.headerMobile{
+		display: none;
+	}
+}
+@media only screen and (max-width: 766px){	
+	/*========MOBILE ONLY Start==========*/
+	.mobile-display-none-header{
+		display: none;
+	}
+	.imgPerson-mobile{
+		display: none;
+	}	
+	.homeAllTextCol{		
+		display: flex;
+		justify-content: center;		
+		align-items: center;		
+		width: 100vw;
+		height: 100vh;		
+	}
+	.homeAllText p{
+		width: 100%;
+	}
+	.imgMobileAbout{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px 0;
+	}	
+	.imgMBL{
+		background-image: url(../img/johnnyDeppMobile.png);
+		background-size: cover;
+		background-position: center;
+		width: 250px;
+		height: 250px;
+		border: 2px solid #252525;
+		border-radius: 50%;
+	}
+	.headerMobile{		
+		background-color: #252525;
+		left: 0 !important;
+		right: 0 !important;
+		width: 100vw !important;
+		height: 50px;
+		z-index: 999;
+		padding: 0;
+		margin: 0 0 20px 0;		
+	}
+	.mblHeaderText h1{
+		color: #fff;
+		font-size: 30px;
+		padding: 5px 20px;
+	}
+	.mblHeaderText h1 span{
+		color: #8a2be2;
+		font-weight: 700;		
+	}
+	.custom-title{
+		font-size: 18px;
+	}
+	.cnt-pdng-mrng{
+		margin: 0;
+		padding: 0;
+	}
+	.box-stats{
+		padding: 10px;
+	}
+	/*========MOBILE ONLY Stop==========*/
+}
+@media only screen and (max-height: 603px){
+	.homeAllText{
+		margin-bottom: 70px;
+	}
+	.homeAllText p{
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 80vw;
+	}
+}
+@media (max-width: 1024px) and (min-height: 812px){
+	.imgPerson img{
+		display: none;
+	}
+	.imgPersonHomeMobile{
+		background-image: url(../img/johnnyDepp1.png); 
+		background-size: cover;
+		background-position: center;
+		width: 45vw;
+		height: 80vw;
+		border-radius: 10px;
+	}
+	
+}
+@media only screen and (min-height: 912px){
+	.homeAllText p{
+		width: 40vw;
+	}
+}

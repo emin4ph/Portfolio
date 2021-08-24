@@ -1,0 +1,451 @@
+body{
+	background: #111;
+}
+.allPillsBox{
+	overflow: hidden;  	
+  position: fixed;  	
+  right: 0; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;  
+  height: 100vh;	  
+  z-index: 9999;
+}
+.pillsUlBox{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid: repeat(5, 70px) / auto;
+}
+.categoryTextDiv{
+	overflow: hidden;  	
+  position: fixed;
+  bottom: 0;
+  right: 0; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%; 
+  margin: 0 10px 20px 0;
+}
+.text-category{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8a2be2;
+	width: 250px;
+	height: 60px;
+	border-radius: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 23px;
+	overflow: hidden !important;
+}
+.nav-itemAll{
+	margin-right: 10px;	
+}
+.nav-itemAll .active div{
+	background-color: #8a2be2 !important;
+}
+.pillsCategory:hover{
+	text-decoration: none !important;
+}
+.icon-category{
+	font-size: 20px;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #343a40;
+	border-radius: 50%;	
+}
+.icon-category:hover{
+	background-color: #8a2be2;
+}
+/*=============================
+=======Start HOME============
+=============================*/
+.d12 {
+	width: 30vw; 
+	height: 100vh;	
+	transform: skew(20deg) !important;
+	transition: 1s all !important;
+	background: #8a2be2;
+}
+.imgPerson{
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	margin: 0;	
+	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items: center !important;
+}
+.imgPerson img{
+	width: 60vmin;
+	height: 83vmin;	
+	display: grid;
+	align-items: center !important;
+	justify-content: center;
+	border-radius: 10px;
+	/*border: 3px solid #fff;*/
+}
+.personAboutBOX{
+	display: grid;
+	align-items: center !important;
+}
+.homeAllText h6{
+	color: #fff;
+	font-size: 25px;
+}
+.homeAllText h1{
+	color: #8a2be2;
+	font-size: 40px;
+	font-weight: 700;	
+}
+.homeAllText h1 span{
+	color: #fff;	
+	font-weight: 400;	
+}
+.homeAllText p{
+	color: #fff;	
+	font-size: 18px;
+	width: 50vmin;
+}
+.homeAllText a{
+	color: #fff;	
+	text-transform: uppercase;
+	background-color: #8a2be2;
+	border: 1px solid #8a2be2;	
+}
+.homeAllText a:hover{
+	color: #8a2be2;
+	background: none;
+	border: 1px solid #8a2be2;
+	transition: 1s all;
+}
+/*=============================
+=======Stop HOME============
+=============================*/
+/*---------------------------------------------------*/
+
+/*=============================
+=======Start ABOUT============
+=============================*/
+.headerAboutBox{
+	margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    display: grid;
+    text-align: center;    
+}
+.headerAboutBox h1{
+	font-size: 56px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    grid-column-gap: 10px; 
+}
+.headerAboutBox h1 span{	
+	color: #8a2be2;	
+}
+.title-bg{
+	font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 48%;
+    text-transform: uppercase;
+    font-weight: 800;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.07);
+}
+.custom-title {
+	color: #fff;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.about-list{
+	display: grid;
+	grid-row-gap: 10px;
+}
+.title{
+	font-size: 14px;
+	color: #fff;
+	opacity: .8;
+    text-transform: capitalize;
+}
+.titlleAboutPerson{
+	color: #fff;
+}
+.downloadAboutCV{	
+  	background-color: #8a2be2;
+  	border: none;
+  	color: #FFFFFF;
+  	text-align: center;
+  	font-size: 18px;  	
+  	width: 200px;
+  	transition: all 0.5s;
+  	cursor: pointer;
+  	margin: 5px;
+  	text-transform: uppercase;
+  	font-weight: bold;
+}
+.downloadAboutCV span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.downloadAboutCV span::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f019';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 16px;
+}
+.downloadAboutCV:hover span {
+  padding-right: 25px;
+  color: #fff;
+}
+
+.downloadAboutCV:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.box-stats{
+	display: grid;
+	grid: repeat(2, auto) / auto;
+	border: 1px solid #252525;
+	padding: 20px 30px 25px 40px;
+	border-radius: 5px;
+}
+.with-margin{
+	margin-bottom: 30px;
+}
+.box-stats h3 {
+	color: #8a2be2;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    grid-column-gap: 10px;
+}
+.box-stats h3 i{
+	font-size: 25px;
+	padding: 12px 0 0 0;
+}	
+.box-stats p {
+	color: #fff;
+	margin: 0;
+	padding-top: 10px;
+}
+/*=============================
+=======Stop ABOUT============
+=============================*/
+/*----------------------------------------------------*/
+/*=============================
+=======Start PORTFOLIO============
+=============================*/
+.marginPortfolio{
+	margin-bottom: 30px;
+}
+.box-imgPortfolio{
+	position: relative;
+	width: 100%;
+}
+.box-imgPortfolio img{
+	display: block;
+  width: 100%;
+  height: auto;  
+  border-radius: 5px;
+}
+.imgHoverPorfolio{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8a2be2;	
+  border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+}
+.box-imgPortfolio:hover .imgHoverPorfolio {
+  opacity: 1;
+}
+/*=============================
+=======Stop PORTFOLIO============
+=============================*/
+/*--------------------------------------------------------*/
+/*=============================
+=======Start CONTACT============
+=============================*/
+.contactPfirst{
+	color: #fff;
+	width: 30vmin;
+}
+.contactPinfo{
+	padding-top: 20px;
+	color: #fff;
+	display: grid;
+	grid: auto / 50px auto;	
+}
+.contactPinfo p span{
+	font-size: 14px;
+	opacity: .8;
+}
+.contactPinfo i{
+	color: #8a2be2;
+	font-size: 40px;
+}
+.social{
+	margin-top: 20px; 
+	display: grid;
+	grid: auto / repeat(4, 50px);	
+	grid-column-gap: 10px;
+}
+.social li {
+	width: 40px !important;
+	height: 40px !important;
+	background-color: #343a40;
+	border-radius: 10px;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.social li:hover{
+	background-color: #8a2be2;
+}
+.socialIcons{
+	color: #fff;
+}
+.inputContact{
+	width: 100%;
+	background-color: #252525;
+	border: 1px solid #252525;
+	border-radius: 5px;
+	height: 40px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.txtA-btn-contact textarea{
+	width: 100%;
+	height: 25vmin;
+	background-color: #252525;
+	border: 1px solid #252525;
+	border-radius: 5px;	
+	padding: 10px 20px;	
+	margin-bottom: 20px;
+	color: #fff;
+}
+.btn-contact{	
+  	background-color: #8a2be2;
+  	border: none;
+  	color: #FFFFFF;
+  	text-align: center;
+  	font-size: 18px;  	
+  	width: 200px;
+  	transition: all 0.5s;
+  	cursor: pointer;
+  	margin: 5px;
+  	text-transform: uppercase;
+  	font-weight: bold;
+}
+.btn-contact span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-contact span:after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f1d8';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 16px !important;
+ 	text-align: center;
+}
+.btn-contact:hover span {
+  padding-right: 25px;
+  color: #fff;
+}
+
+.btn-contact:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*=============================
+=======Stop CONTACT============
+=============================*/
+/*---------------------------------------------------------------*/
+/*=============================
+=======Start BLOG============
+=============================*/
+.allBoxBlog{
+	background-color: #252525;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+.imgBoxBlog img{
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.hr-line{
+	background-color: #8a2be2;
+	height: 5px;
+}
+.textblg{
+	color: #fff;
+	padding: 10px 15px 0 15px;
+}
+.textblg h3{
+	font-size: 20px;
+}	
+.textblg p{
+	font-size: 14px;
+	opacity: .8;
+}	
+/*=============================
+=======Stop BLOG============
+=============================*/
